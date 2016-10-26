@@ -21,6 +21,7 @@ Follow below steps to use it:
 2. Refer the code within [ObjectDiffDemo](ObjectDiffDemo/ObjectDiffDemo "ObjectDiffDemo") to compare and show the compare result.
 
 Following is an example to compare 2 process record. The yellow background indicates the data is updated, and red background indicates the data is removed while the green background indicates the data is added.  
+
 [CompareResult.html](Resources/CompareResult.html "CompareResult.html")
 
 ![XX](Resources/CompareResult.jpd.jpg)
