@@ -1,0 +1,31 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://schemas.hp.com/SM/7" xmlns:com="http://schemas.hp.com/SM/7/Common" xmlns:xm="http://www.w3.org/2005/05/xmlmime">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SaveCompareServiceRequest attachmentInfo="?" attachmentData="?" ignoreEmptyElements="true" updateconstraint="-1">
+         <ns:model query="?">
+            <ns:keys query="?" updatecounter="?">
+               <!--Optional:-->
+               <ns:Name type="String" mandatory="?" readonly="?"></ns:Name>
+            </ns:keys>
+            <ns:instance query="?" uniquequery="?" recordid="?" updatecounter="?">
+               <!--Optional:-->
+               <ns:Name type="String" mandatory="?" readonly="?">formatctrl</ns:Name>
+               <!--Optional:-->
+               <ns:Content type="String" mandatory="?" readonly="?">?</ns:Content>
+               <!--Optional:-->
+               <ns:QueryString type="String" mandatory="?" readonly="?">name="probsummary"</ns:QueryString>
+               <!--Optional:-->
+               <ns:attachments>
+                  <!--Zero or more repetitions:-->
+                  <com:attachment xm:contentType="application/?" href="?" contentId="?" action="?" name="?" type="?" len="?" charset="?" upload.by="?" upload.date="?" attachmentType="?">cid:846544763182</com:attachment>
+               </ns:attachments>
+            </ns:instance>
+            <!--Optional:-->
+            <ns:messages>
+               <!--Zero or more repetitions:-->
+               <com:message type="String" mandatory="?" readonly="?" severity="?" module="?">?</com:message>
+            </ns:messages>
+         </ns:model>
+      </ns:SaveCompareServiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

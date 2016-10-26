@@ -1,0 +1,20 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Body>
+      <SaveCompareServiceResponse message="Success" returnCode="0" schemaRevisionDate="2016-08-26" schemaRevisionLevel="2" status="SUCCESS" xsi:schemaLocation="http://schemas.hp.com/SM/7 http://psmadv01.edev.elabs.eds.com:47002/SM/7/CompareService.xsd" xmlns="http://schemas.hp.com/SM/7" xmlns:cmn="http://schemas.hp.com/SM/7/Common" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <model>
+            <keys>
+               <Name type="String">formatctrl</Name>
+            </keys>
+            <instance recordid="formatctrl" uniquequery="name=&quot;formatctrl&quot;">
+               <Name type="String">formatctrl</Name>
+               <Content type="String">{"name":"probsummary","database.access":"true","sequential":[],"queries":[],"calculations":[],"validations":[],"format.calc":"false","init.expr":[],"db.add":"true","db.update":"true","db.delete":"true","db.reset":"false","db.regen":"false","db.unload":"true","default.sort":[],"subroutines":[],"add.options":[],"db.options":"false","db.find":"true","db.fill":"true","db.input":"false","db.edit":"false","fc.func":[],"db.query":"true","obsolete.scott1":{},"qbeformats":[],"db.print":"false","db.mass.add":"false","db.mass.update":"false","db.mass.delete":"false","db.count":"true","views":[],"db.views":"true","db.validity":"true","db.expand":"true","db.complex":"false","db.load":"false","sysmodcount":"5","sysmoduser":"USER_XXXX","sysmodtime":"12/08/2016 10:56:51","javascript":[{},{"javascript.update":"false"}]}</Content>
+               <QueryString type="String">name="probsummary"</QueryString>
+            </instance>
+         </model>
+         <messages>
+            <cmn:message type="String">formatctrl</cmn:message>
+            <cmn:message type="String">name="probsummary"</cmn:message>
+         </messages>
+      </SaveCompareServiceResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

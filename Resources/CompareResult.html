@@ -1,0 +1,313 @@
+<html>
+  <head>
+    <meta name="description" content=" " />
+    <title>Process: </title>
+    <link rel="stylesheet" type="text/css" href="XSL_Files/default.css" />
+  </head>
+  <body class="">
+    <h1>Process Definition</h1>
+    <h3>Process Name: <div style='background:#DBDB70'>MS.pmt.call.subroutines.add<br/> ==><br/>MS.pmt.call.subroutines.update</div></h3>
+    <table>
+      <tr>
+        <td class="label">Save Cursor Position?</td>
+        <td />
+        <td class="label">Run Standard Process when complete?</td>
+        <td />
+      </tr>
+      <tr>
+        <td class="label">Run in window?</td>
+        <td />
+        <td class="label">Window Title:</td>
+        <td />
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Initial Expressions</th>
+      </tr>
+      <tr>
+        <td><div style='background:#DBDB70'>$ms.pmt.open.value.names={};$ms.pmt.open.values={};$ms.pmt.open.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.open.values="Open";2 in $ms.pmt.open.values=nullsub(assignment in $file, "not provided");3 in $ms.pmt.open.values=0<br/> ==><br/>$ms.pmt.open.value.names={};$ms.pmt.open.values={};$ms.pmt.open.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.open.values="Open";2 in $ms.pmt.open.values=nullsub(assignment in $L.file, "not provided");3 in $ms.pmt.open.values=0</div></td>
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td><div style='background:#DBDB70'>$ms.pmt.update.value.names={};$ms.pmt.update.values={};$ms.pmt.update.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.update.values="Update";2 in $ms.pmt.update.values=nullsub(assignment in $file, "not provided");3 in $ms.pmt.update.values=0<br/> ==><br/>$ms.pmt.update.value.names={};$ms.pmt.update.values={};$ms.pmt.update.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.update.values="Update";2 in $ms.pmt.update.values=nullsub(assignment in $L.file, "not provided");3 in $ms.pmt.update.values=0</div></td>
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td><div style='background:#DBDB70'>$ms.pmt.close.value.names={};$ms.pmt.close.values={};$ms.pmt.close.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.close.values="Close";2 in $ms.pmt.close.values=nullsub(assignment in $file, "not provided");3 in $ms.pmt.close.values=0<br/> ==><br/>$ms.pmt.close.value.names={};$ms.pmt.close.values={};$ms.pmt.close.value.names={"$L.ms.action", "$L.ms.assignment", "$L.ms.entry.number"};1 in $ms.pmt.close.values="Close";2 in $ms.pmt.close.values=nullsub(assignment in $L.file, "not provided");3 in $ms.pmt.close.values=0</div></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Initial JavaScript</th>
+      </tr>
+      <tr>
+        <td>
+          <pre><s><div style='background:#FF0000'>print("MS.pmt.call.subroutines.add")</div></s></pre>
+        </td>
+      </tr>
+    </table>
+    <p />
+    <h3>RAD</h3>
+    <table>
+      <tr>
+        <th>Expressions evaluated before RAD call</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <td class="label">RAD Application:</td>
+        <td>se.call.process</td>
+        <td class="label">Condition:</td>
+        <td><div style='background:#DBDB70'>nullsub(assignment in $file, "none")~="none" and nullsub($ms.return.transaction.type, "none")~#"ReturnConfirm"<br/> ==><br/>nullsub(assignment in $L.file, "none")~="none" and nullsub($ms.return.transaction.type, "none")~#"ReturnConfirm"</div></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Parameter Names</th>
+        <th>Parameter Values</th>
+      </tr>
+      <tr>
+        <td>file<br />name<br />names<br />values<br /></td>
+        <td><div style='background:#DBDB70'>$file<br/> ==><br/>$L.file</div><br />"MS.HPSXout.pmt.OpenToNewRIMS"<br />$ms.pmt.open.value.names<br />$ms.pmt.open.values<br /></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Post RAD Expressions</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p />
+    <table>
+      <tr>
+        <th>Expressions evaluated before RAD call</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <td class="label">RAD Application:</td>
+        <td>se.call.process</td>
+        <td class="label">Condition:</td>
+        <td><div style='background:#DBDB70'>nullsub(assignment in $file, "none")~="none" and nullsub($ms.return.transaction.type, "none")~#"ReturnConfirm"<br/> ==><br/>nullsub($ms.return.transaction.type, "none")~#"ReturnConfirm" and rcStatus in $L.file~="Closed"</div></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Parameter Names</th>
+        <th>Parameter Values</th>
+      </tr>
+      <tr>
+        <td>file<br />name<br />names<br />values<br /></td>
+        <td><div style='background:#DBDB70'>$file<br/> ==><br/>$L.file</div><br />"MS.HPSXout.pmt.UpdateToRIMS"<br />$ms.pmt.update.value.names<br />$ms.pmt.update.values<br /></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Post RAD Expressions</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p />
+    <table>
+      <tr>
+        <th>Expressions evaluated before RAD call</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <td class="label">RAD Application:</td>
+        <td>se.call.process</td>
+        <td class="label">Condition:</td>
+        <td><div style='background:#DBDB70'>nullsub(assignment in $file, "none")~="none" and nullsub($ms.return.transaction.type, "none")~#"ReturnConfirm"<br/> ==><br/>rcStatus in $L.file="Closed"</div></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Parameter Names</th>
+        <th>Parameter Values</th>
+      </tr>
+      <tr>
+        <td>file<br />name<br /><div style='background:#00FF00'>names<div style='background:#00FF00'><br /><div style='background:#00FF00'>values<div style='background:#00FF00'><br /></td>
+        <td><div style='background:#DBDB70'>$file<br/> ==><br/>$L.file</div><br /><div style='background:#DBDB70'>"MS.HPSXout.pmt.UpdateToRIMSsubaction"<br/> ==><br/>"MS.HPSXout.pmt.CloseToRIMS"</div><br /><div style='background:#00FF00'>$ms.pmt.close.value.names<div style='background:#00FF00'><br /><div style='background:#00FF00'>$ms.pmt.close.values<div style='background:#00FF00'><br /></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Post RAD Expressions</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p />
+    <table>
+      <tr>
+        <th>Expressions evaluated before RAD call</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <td class="label">RAD Application:</td>
+        <td><div style='background:#00FF00'>se.call.process<div style='background:#00FF00'></td>
+        <td class="label">Condition:</td>
+        <td><div style='background:#00FF00'>true<div style='background:#00FF00'></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Parameter Names</th>
+        <th>Parameter Values</th>
+      </tr>
+      <tr>
+        <td><div style='background:#00FF00'>file<div style='background:#00FF00'><br /><div style='background:#00FF00'>name<div style='background:#00FF00'><br /></td>
+        <td><div style='background:#00FF00'>$L.file<div style='background:#00FF00'><br /><div style='background:#00FF00'>"MS.HPSXout.pmt.UpdateToRIMSsubaction"<div style='background:#00FF00'><br /></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Post RAD Expressions</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p />
+    <table>
+      <tr>
+        <th>Expressions evaluated before RAD call</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <td class="label">RAD Application:</td>
+        <td><div style='background:#00FF00'>se.call.process<div style='background:#00FF00'></td>
+        <td class="label">Condition:</td>
+        <td><div style='background:#00FF00'>status in $L.file="Closed"<div style='background:#00FF00'></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Parameter Names</th>
+        <th>Parameter Values</th>
+      </tr>
+      <tr>
+        <td><div style='background:#00FF00'>file<div style='background:#00FF00'><br /><div style='background:#00FF00'>name<div style='background:#00FF00'><br /></td>
+        <td><div style='background:#00FF00'>$L.file<div style='background:#00FF00'><br /><div style='background:#00FF00'>"MS.HPSXout.pmt.CloseParentProblem"<div style='background:#00FF00'><br /></td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Post RAD Expressions</th>
+      </tr>
+      <tr>
+        <td>
+          <br />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p />
+    <table>
+      <tr>
+        <th>Final Expressions</th>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Final JavaScript</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>vars['$L.file'].doSave();</pre>
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>Next Process</th>
+        <th>Condition</th>
+      </tr>
+    </table>
+    <p />
+    <table>
+      <tr>
+        <th>SysModUser</th>
+        <td>ASIAPACIFIC_DAIZHEN</td>
+      </tr>
+      <tr>
+        <th>SysModTime</th>
+        <td><div style='background:#DBDB70'>27/09/2016 12:56:18<br/> ==><br/>27/09/2016 07:58:54</div></td>
+      </tr>
+      <tr>
+        <th>SysModCount</th>
+        <td><div style='background:#DBDB70'>6<br/> ==><br/>12</div></td>
+      </tr>
+    </table>
+  </body>
+</html>
